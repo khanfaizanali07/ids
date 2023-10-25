@@ -1,10 +1,15 @@
 import React from 'react'
-import NavBar from './Home_Components/NavBar'
+import Services from './Home_Components/Services'
+import Contact from './Home_Components/Contact'
+import Clients from './Home_Components/Clients'
 
 const Home = () => {
+  
   return (
     <div>
-      <NavBar/>
+      <Services/>
+      <Clients/>
+      <Contact/>
     </div>
   )
 }
