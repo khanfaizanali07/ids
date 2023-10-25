@@ -27,7 +27,7 @@ const NavBar = ({ socialLinks }) => {
             
             <div className="flex w-1/2 place-content-end gap-4 items-center text-white mr-24">
               <p className='text-xs'>Follow Us</p>
-                {socialLinks.map((social, index) =>  <a key={index} className= {social.styles} href={social.href} target='_blank'>{social.icon}</a>)}
+                {socialLinks?.map((social, index) =>  <a key={index} className= {social.styles} href={social.href} target='_blank'>{social.icon}</a>)}
             </div>
       </div>
 
@@ -73,7 +73,7 @@ const NavBar = ({ socialLinks }) => {
 </li>
         <li><a className="m-1">Our Services</a></li>
         <div className="flex gap-4 justify-center mt-24 text-xl">
-    {socialLinks.map((social, index) =>  <a key={index} className= {social.styles} href={social.href} target='_blank'>{social.icon}</a>)}
+    {socialLinks?.map((social, index) =>  <a key={"t_"+index} className= {social.styles} href={social.href} target='_blank' >{social.icon}</a>)}
     </div> 
     </ul>
        

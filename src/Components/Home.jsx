@@ -8,20 +8,21 @@ import Awards from './Home_Components/Awards'
 import Services from './Home_Components/Services'
 import Contact from './Home_Components/Contact'
 import Clients from './Home_Components/Clients'
+import Footer from './Home_Components/Footer'
 
 const Home = () => {
   
   return (
     <div>
+      <Carousel/>
+      <Cards/>
       <Services/>
-      <Clients/>
-      <Contact/>
-      <NavBar/>
-      {/* <Carousel/> */}
-      {/* <Cards/> */}
       <Slider/>
+      <Clients/>
       <Credentials/>
       <Awards/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

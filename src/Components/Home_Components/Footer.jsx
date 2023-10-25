@@ -39,7 +39,7 @@ const Footer = ({ socialLinks }) => {
                 <p>&copy;{date.getFullYear()} i-diligence. All Rights Reserved.</p>
             <nav className="md:place-self-center md:justify-self-end">
                 <div className="grid grid-flow-col gap-4">
-                    {socialLinks.map((social, index)=> <a key={index} href={social.href} className={social.styles} style={{fontSize: '30px'}}>
+                    {socialLinks?.map((social, index)=> <a key={index} href={social.href} className={social.styles} style={{fontSize: '30px'}}>
                         {social.icon}
                     </a> )}
                 </div>
