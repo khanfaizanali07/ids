@@ -156,8 +156,8 @@ const Clients = () => {
   return (
     <>
     
-    <div className="flex items-center justify-center mt-12">
-      <h1 className=" text-xl lg:text-3xl"> Our Valuable Clients </h1>
+    <div className="flex items-center justify-center ">
+      <h1 className=" text-xl lg:text-3xl  text-slate-500"> Our Valuable Clients </h1>
     </div>
     <div className=" md:mt-5 lg:mt-6">
     <Swiper

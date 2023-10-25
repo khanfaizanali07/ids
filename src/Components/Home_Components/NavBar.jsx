@@ -31,7 +31,7 @@ const NavBar = ({ socialLinks }) => {
             </div>
       </div>
 
-      <nav className="flex justify-between shadow-md lg:flex place-content-evenly lg:justify-around w-full h-20 bg-white items-center sticky top-0 z-40">
+      <nav className="flex justify-between shadow-md lg:flex place-content-evenly lg:justify-around w-full h-20 items-center sticky top-0 z-40 bg-[#c2deff]">
         <div className="flex items-start ml-4  lg:items-center">
           <a href=""><img src={ids18} alt="Logo" className='h-12'/></a>
         </div>
@@ -92,7 +92,7 @@ const NavBar = ({ socialLinks }) => {
                   <li><a>Enquiry Form</a></li>
                 </ul>
               </div>
-              <div className="dropdown dropdown-hover">
+              <div className="dropdown dropdown-hover z-100">
                 <label tabIndex={0} className="cursor-pointer hover:text-blue-600">SAP Offerings</label>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>SAP Services</a></li>
@@ -108,7 +108,7 @@ const NavBar = ({ socialLinks }) => {
               <a href="">Our Services</a>
             </li>
         </ul>
-        <button className="hidden lg:flex btn btn-neutral mr-4">Enquiry Form</button>
+        <button className="hidden lg:flex btn bg-[#336298] mr-4 text-white hover:opacity-0.100 hover:bg-black">Enquiry Form</button>
       </nav>
        
 

@@ -46,17 +46,17 @@ const Services = () => {
 
     ]
   return (
-    <>
-    <p className="text-center mt-4 font-bold">REASON TO CHOOSE US</p>
-    <h1 className='text-center text-lg lg:text-3xl font-bold mt-8'>For your very specific industry,<br/>
+    <div className=' pt-10 '>
+    <p className="text-center  font-bold  text-slate-500 ">REASON TO CHOOSE US</p>
+    <h1 className='text-center text-lg lg:text-3xl font-bold '>For your very specific industry,<br/>
         we have<br/>
-        highly-tailored IT solutions.</h1>
-    <div className="flex items-center justify-center p-[50px] ">
+        <h1 className=' text-[#336298]'>highly-tailored IT solutions.</h1></h1>
+    <div className="flex items-center justify-center p-[30px]  ">
         <div className=' grid grid-cols-1  md:grid-cols-2 md:gap-5 lg:card lg:grid lg:grid-cols-3 lg:gap-5 '>
             {cardDetails.map((item, index) => <ServiceCard key={index} item={item}/>)}
     </div>
     </div>
-    </>
+    </div>
   )
 }
 

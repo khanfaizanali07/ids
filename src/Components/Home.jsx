@@ -22,7 +22,6 @@ const Home = () => {
       <Credentials/>
       <Awards/>
       <Contact/>
-      <Footer/>
     </div>
   )
 }

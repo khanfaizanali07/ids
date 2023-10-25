@@ -4,31 +4,31 @@ const Footer = ({ socialLinks }) => {
     const date = new Date;
   return (
     <div>
-        <footer className=" pt-32 footer p-10 bg-base-200 text-base-content lg:flex justify-center  lg:gap-[260px] footer-center">
+        <footer className=" pt-32 footer p-10 bg-[#bbc8d7] text-base-content lg:flex justify-center  lg:gap-[260px] footer-center ">
             <nav>
-                <header className="footer-title">Our Services</header> 
-                <a className="link link-hover">Digital Services</a> 
-                <a className="link link-hover">Managed Services</a> 
-                <a className="link link-hover">ERP Solutions</a> 
+                <header className="footer-title text-[#336298]">Our Services</header> 
+                <a className="link link-hover text-black">Digital Services</a> 
+                <a className="link link-hover text-black">Managed Services</a> 
+                <a className="link link-hover text-black">ERP Solutions</a> 
             </nav> 
             <nav>
-                <header className="footer-title">Company</header> 
-                <a className="link link-hover">About Us</a> 
-                <a className="link link-hover">Contact Us</a> 
-                <a className="link link-hover">Careers</a> 
-                <a className="link link-hover">Enquiry Form</a>
+                <header className="footer-title text-[#336298]">Company</header> 
+                <a className="link link-hover text-black">About Us</a> 
+                <a className="link link-hover text-black">Contact Us</a> 
+                <a className="link link-hover text-black">Careers</a> 
+                <a className="link link-hover text-black">Enquiry Form</a>
             </nav> 
             <nav>
-                <header className="footer-title">SAP Offerings</header> 
-                <a className="link link-hover">SAP S/4HANA</a> 
-                <a className="link link-hover">SAP Cloud</a> 
-                <a className="link link-hover">SAP Fiori</a>
-                <a className="link link-hover">SAP Analytics</a>
-                <a className="link link-hover">SAP Infra (Basis)</a>
+                <header className="footer-title text-[#336298]">SAP Offerings</header> 
+                <a className="link link-hover text-black">SAP S/4HANA</a> 
+                <a className="link link-hover text-black">SAP Cloud</a> 
+                <a className="link link-hover text-black">SAP Fiori</a>
+                <a className="link link-hover text-black">SAP Analytics</a>
+                <a className="link link-hover text-black">SAP Infra (Basis)</a>
                 
             </nav>
             </footer> 
-            <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 lg:flex items-center justify-center gap-8 footer-center">
+            <footer className="footer px-10 py-4 bg-[#bbc8d7] text-base-content border-base-300 lg:flex items-center justify-center gap-8 footer-center">
             <aside className="items-center grid-flow-col">
                 <img src={logo} width="120" height="120"/>
                 <p>Plot No. 13, Tuljai Nagar, Gadiya Vihar,<br/>

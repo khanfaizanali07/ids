@@ -14,10 +14,10 @@ const Awards = () => {
   const totalDetails = [logo_1,logo_2,logo_3,logo_4,logo_5,logo_6,logo_7,logo_8,logo_9,logo_10];
 
   return (
-    <div  className= ' parent w-full grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3 lg:w-full mt-[25px]'>
+    <div  className= ' parent w-full grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3 lg:w-full'>
         
          {totalDetails.map((img , key)=>
-         <div  className= 'h-[150px] w-full  flex flex-wrap justify-center overflow-hidden items-center   mb-[20px]  transform  transition duration-500 hover:scale-125'>
+         <div  className= ' w-full  flex flex-wrap justify-center overflow-hidden items-center   mb-[20px]  transform  transition duration-500 hover:scale-125'>
             <div style = {{ backgroundImage:`url(${img})` }} className='h-[180px] w-[150px] bg-no-repeat '> 
         </div>
         </div>
