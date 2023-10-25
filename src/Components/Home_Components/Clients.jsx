@@ -159,7 +159,7 @@ const Clients = () => {
     <div className="flex items-center justify-center mt-12">
       <h1 className=" text-xl lg:text-3xl"> Our Valuable Clients </h1>
     </div>
-    <div className="h-[400px] md:mt-5 lg:mt-6">
+    <div className=" md:mt-5 lg:mt-6">
     <Swiper
         slidesPerView={2}
         // spaceBetween={30}
@@ -183,7 +183,7 @@ const Clients = () => {
           }
         }
         }
-        className="mySwiper w-full h-[200px]"
+        className="mySwiper w-full "
       >
         {clientImages1.map((images, index) =>
           <SwiperSlide> <a href={images.href} key={index} target={images.target}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
@@ -213,7 +213,7 @@ const Clients = () => {
           }
         }
         }
-        className="mySwiper w-full h-[300px]"
+        className="mySwiper w-full "
       >
         {clientImages2.map((images, index) =>
           <SwiperSlide> <a href={images.href2} key={index} target={images.target2}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image2} alt="Clients Logos"/></a></SwiperSlide>

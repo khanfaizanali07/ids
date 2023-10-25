@@ -1,6 +1,7 @@
 import React from 'react'
 import {FiPhone} from 'react-icons/fi'
 import headphone from '../../assets/Images/cta-icon2.png'
+import backgroundImg from '../../assets/images/contact-bg.jpg'
 const Contact = () => {
     const numbers = [
         {
@@ -18,7 +19,7 @@ const Contact = () => {
     ]
   return (
     <div className="px-16 flex justify-center mb-[-102px] mt-8">
-      <div className="bg-[url('D:\Faizan\Internship\ids\src\assets\Images\contact-bg.jpg')] bg-cover rounded-xl bg-center relative bg-no-repeat lg:h-[200px] lg:w-full flex flex-wrap h-auto md:w-[600px] lg:flex justify-evenly items-center gap-4">
+      <div style={{backgroundImage : `url(${backgroundImg})`}} className=" bg-cover rounded-xl bg-center relative bg-no-repeat lg:h-[200px] lg:w-full flex flex-wrap h-auto md:w-[600px] lg:flex justify-evenly items-center gap-4">
             <div className="text-center">
                 <b className="text-2xl lg:text-3xl">Obtain further information <br/> by contacting with our <br/> experienced IT staffs.</b>
                 <p className="text-xs mt-2">We're available 24*7 <br/>Contact to require a detailed analysis and assessment of your plan.</p>

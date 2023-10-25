@@ -19,7 +19,7 @@ const Credentials = () => {
 
   return (
     <div>
-      <div className='Parent bg-[#121621] lg:w-full lg:h-[600px] lg:flex lg:justify-center'>
+      <div className='Parent bg-[#121621] lg:w-full py-12 lg:flex lg:justify-center'>
         
         <div className=' flex flex-col justify-center  gap-5  lg:w-[640px] lg:h-full'>
         <h5 className='text-center  mt-2 text-xl sm:text-2xl lg:text-xl font-sans font-semibold text-slate-500 tracking-widest ' >

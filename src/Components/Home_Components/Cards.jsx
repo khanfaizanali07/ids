@@ -24,7 +24,7 @@ const Cards = () => {
   
 return (
     <div className=' flex justify-center'>        
-    <div className='card w-[1100px] h-[280px]  relative z-10 grid grid-cols-3 gap-5 bottom-[140px]'>
+    <div className='card w-[1100px]  relative z-10 grid grid-cols-3 gap-5 bottom-[140px]'>
       {cardDetails.map((card,index) => <CardComponent cardDetails={card} />)}
     </div>
 

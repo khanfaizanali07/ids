@@ -15,9 +15,9 @@ const Home = () => {
   return (
     <div>
       <Carousel/>
-      <Cards/>
+      {/* <Cards/> */}
       <Services/>
-      <Slider/>
+      {/* <Slider/> */}
       <Clients/>
       <Credentials/>
       <Awards/>

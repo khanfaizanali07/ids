@@ -52,7 +52,7 @@ const Slider = () => {
             centeredSlides={true}
             loop={true} 
             autoplay={{
-              delay: 2500,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -62,14 +62,15 @@ const Slider = () => {
               640:{
                 slidesPerView : 2,
                 spaceBetween : 20,
-                centeredSlides: false
+                centeredSlides: false,
+                loop:true
               },
               1024:{
                 slidesPerView : 3,
-                centeredSlides : true,
+                centeredSlides : false,                
               }
             }}
-            className="mySwiper w-[350px]  sm:w-[600px] lg:w-[1000px] lg:pl-[40px]">
+            className="mySwiper w-[350px]  sm:w-[600px] lg:w-full lg:ps-[340px] ">
             {sliderDetails.map((details)=>
               <SwiperSlide>      
                 <SliderComponent sliderDetails={details} />
