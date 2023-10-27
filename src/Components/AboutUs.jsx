@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import img1 from '../assets/Images/About/about-3.jpg'
 import img2 from '../assets/Images/About/about-4.jpg'
-import bannerImg from '../assets/images/About/page-banner.jpg'
 import aboutBg from '../assets/Images/About/about-shape2.png'
 import {FaStar, FaEye, FaBullseye} from 'react-icons/fa'
 import img3 from '../assets/Images/About/choose_img01.jpg'
+import BreadCrumb from './Shared/BreadCrumb'
 
 const AboutUs = () => {
 
@@ -51,13 +51,14 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div style={{backgroundImage : `url(${bannerImg})`}} className=" h-[600px] w-full flex justify-center items-center flex-col opacity-80 bg-no-repeat bg-center">
+    <BreadCrumb>
       <b className=" text-6xl text-[#336298]">About Us</b>
       <div className="flex justify-center items-center">
       <Link to='/' className="text-lg pt-4 text-[#336298] hover:text-black">Home</Link>
       <p className="pt-4 text-lg text-[#336298]">. / About</p>  
       </div>
-      </div>
+    </BreadCrumb>
+      
       <div className=" flex items-center justify-center flex-col lg:flex-row lg:flex lg:mt-4">
         <div style={{backgroundImage : `url(${aboutBg})`}} className="flex lg:w-1/2 bg-no-repeat bg-center items-center
          justify-center md:h-[600px] h-[200px] w-[100px]">

@@ -50,7 +50,7 @@ const NavBar = ({ socialLinks }) => {
       <summary className="m-1">Company</summary>
       <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
         <li><Link to='/about'>About Us</Link></li>
-        <li><a>Contact Us</a></li>
+        <li><Link to='/contact'>Contact Us</Link></li>
         <li><a>Careers</a></li>
         <li><a>Enquiry Form</a></li>
     </ul>
@@ -87,7 +87,7 @@ const NavBar = ({ socialLinks }) => {
                 <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Company</label>
                 <ul tabIndex={0} className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><Link to='/about'>About Us</Link></li>
-                  <li><a>Contact Us</a></li>
+                  <li><Link to='/contact'>Contact Us</Link></li>
                   <li><a>Careers</a></li>
                   <li><a>Enquiry Form</a></li>
                 </ul>

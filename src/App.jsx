@@ -5,6 +5,7 @@ import Home from "./Components/Home"
 import { FaTwitter, FaFacebook, FaLinkedin, FaTumblr, FaReddit } from 'react-icons/fa'
 import {GrMail} from 'react-icons/gr'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Contact from "./Components/Contact"
 
 function App() {
   const socialLinks = [ 
@@ -47,6 +48,7 @@ function App() {
      <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<AboutUs/>}/>
+      <Route path="/contact" element={<Contact/>}/>
      </Routes>
     <Footer socialLinks={socialLinks}/>
     </Router>
