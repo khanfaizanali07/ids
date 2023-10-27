@@ -7,19 +7,23 @@ import Awards from './Home_Components/Awards'
 import Services from './Home_Components/Services'
 import Contact from './Home_Components/Contact'
 import Clients from './Home_Components/Clients'
+import SapServices from './SAP_Components/SapServices'
+import SapNavbar from './SAP_Components/SapNavbar'
 
 const Home = () => {
   
   return (
     <div>
-      <Carousel/>
+      {/* <Carousel/> */}
+      <SapNavbar/>
+      <SapServices/>
       {/* <Cards/> */}
-      <Services/>
+      {/* <Services/> */}
       {/* <Slider/> */}
-      <Clients/>
-      <Credentials/>
-      <Awards/>
-      <Contact/>
+      {/* <Clients/> */}
+      {/* <Credentials/> */}
+      {/* <Awards/> */}
+      {/* <Contact/> */}
     </div>
   )
 }
