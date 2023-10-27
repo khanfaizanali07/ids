@@ -40,13 +40,13 @@ function Carousel() {
         }}
         modules={[EffectCreative , Autoplay]}
         className="mySwiper"
-        // autoplay={{ delay: 5000,
-        //   disableOnInteraction : false
-        // }}
+        autoplay={{ delay: 5000,
+          disableOnInteraction : false
+        }}
       >
         <SwiperSlide>
       <div
-            className={`${baseClasses} bg-center bg-[url('./assets/images/home-bg-1.png')]  bg-no-repeat `}
+            className={`${baseClasses} bg-center bg-[url('./assets/images/home-bg-1.png')]  bg-no-repeat`}
           >
              
             { activeIndex==0 && <motion.div
