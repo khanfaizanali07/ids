@@ -85,7 +85,7 @@ const NavBar = ({ socialLinks }) => {
             <Link to='/'>Home</Link>
               <div className="dropdown dropdown-hover">
                 <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Company</label>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><Link to='/about'>About Us</Link></li>
                   <li><a>Contact Us</a></li>
                   <li><a>Careers</a></li>
@@ -94,7 +94,7 @@ const NavBar = ({ socialLinks }) => {
               </div>
               <div className="dropdown dropdown-hover z-100">
                 <label tabIndex={0} className="cursor-pointer hover:text-blue-600">SAP Offerings</label>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>SAP Services</a></li>
                   <li><a>Core Functinal Services</a></li>
                   <li><a>S/4HANA</a></li>
