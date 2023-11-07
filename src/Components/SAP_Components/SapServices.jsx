@@ -4,6 +4,7 @@ import img2 from '../../assets/images/SAP/SAP_2.jpg'
 import img3 from '../../assets/images/SAP/SAP_3.jpg'
 import img4 from '../../assets/images/SAP/SAP_4.jpg'
 import SapServiceComp from './SapServiceComp'
+import SapNavbar from './SapNavbar'
 const SapServices = () => {
   const cardDetails = [
   {
@@ -28,6 +29,8 @@ const SapServices = () => {
   }
 ]
    return (
+    <>
+    <SapNavbar/>
     <div className='flex flex-wrap justify-center items-center gap-3 sm:flex sm:flex-wrap sm:justify-evenly  sm:w-full border-2 border-red-600 p-[20px] '>
         {
             cardDetails.map((details,key)=> 
@@ -35,6 +38,7 @@ const SapServices = () => {
             )
         }        
     </div>
+    </>
   )
 }
 

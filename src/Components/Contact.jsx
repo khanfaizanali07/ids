@@ -28,13 +28,7 @@ const Contact = () => {
   ]
   return (
   <div>
-      <BreadCrumb>
-        <b className=" text-6xl text-[#336298]">Contact Us</b>
-        <div className="flex justify-center items-center">
-        <Link to='/' className="text-lg pt-4 text-[#336298] hover:text-black">Home</Link>
-        <p className="pt-4 text-lg text-[#336298]">. / Contact</p>  
-        </div>
-      </BreadCrumb>
+      <BreadCrumb heading={"Contact us"} link={"Contact us"} />
       <div className="flex justify-center items-center py-[80px] w-full overflow-hidden">
       <div className=' grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-5 lg:grid lg:grid-cols-3 lg:gap-5'>
             {contactDetails.map((detail, index) => <ContactCards key={index} detail={detail}/>)}
@@ -44,7 +38,7 @@ const Contact = () => {
      <div className='w-full border-2 rounded-lg shadow-2xl pb-8'>
         <h1 className='text-center text-4xl mt-4'>How May We Help You!</h1>
         <div className="flex justify-evenly mt-4 gap-6 px-4">
-        <input type="text" placeholder="Name *" className="input input-bordered border-[#336298] w-full " />
+        <input type="text" placeholder="Name *" className="input input-bordered border-[#336298] w-full " />  
         <input type="text" placeholder="Email *" className="input input-bordered border-[#336298] w-full " />
         </div>
         <div className='w-full mt-4 px-4'><input type="text" placeholder="Subject *" className="input input-bordered border-[#336298] w-full "/>
