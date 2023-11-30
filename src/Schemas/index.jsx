@@ -11,8 +11,9 @@ const phoneRegExp = /^[0]?[0-9]\d{9}$/;
 export const enquiryFormSchema = Yup.object({
     firstName: Yup.string().min(3, "Please Enter Atleast 3 Characters").max(26, "Please Enter Atmost 26 Characters").required("Required"),
     lastName: Yup.string().min(3, "Please Enter Atleast 3 Characters").max(26, "Please Enter Atmost 26 Characters").required("Required"),
-    phoneNo: Yup.string().matches(phoneRegExp, 'Phone number is not valid').required("Required"),
+    phoneNo: Yup.string().matches(phoneRegExp, 'Phone number is not valid').required("Required"),  
     email: Yup.string().email("Invalid Email").required("Required"),
     service: Yup.string().required("Required"),
+    service1: Yup.string().required("Required"),
     message: Yup.string().min(8, "Please Enter Atleast 8 Characters").max(100, "Please Enter Atmost 100 Characters")
 })

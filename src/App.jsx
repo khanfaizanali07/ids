@@ -22,6 +22,14 @@ import Industries from "./Pages/Credentials/Industries"
 import Consultant from "./Pages/Credentials/Consultant"
 import Spinner from "./Components/Shared/Spinner"
 import ProcessTransformation from "./Pages/IT Buisness/ProcessTransformation"
+import Functional from "./Pages/SAP Offerings/Functional"
+import Hana from "./Pages/SAP Offerings/Hana"
+import SapCloud from "./Pages/SAP Offerings/SapCloud"
+import Fiori from "./Pages/SAP Offerings/Fiori"
+import SAPAnalytics from "./Pages/SAP Offerings/SAPAnalytics"
+import TechService from "./Pages/SAP Offerings/TechService"
+import Infra from "./Pages/SAP Offerings/Infra"
+
 
 function App() {
   const socialLinks = [ 
@@ -117,8 +125,6 @@ function App() {
       <Route path="/about" element={<AboutUs isLoading={isLoading} showSpinner={() => showSpinner()}/>}/>
       
       <Route path="/contact" element={<Contact/>}/>
-      
-      <Route path="/sapOfferings" element={<SapServices/>}/>
        
       <Route path="/careers" element={<Careers/>}/>
        
@@ -145,6 +151,26 @@ function App() {
       <Route path="/consultant" element={<Consultant/>}/>
 
       <Route path="/process" element={<ProcessTransformation/>}/>
+
+      <Route path="/sapOfferings" element={<SapServices/>}/>
+
+      <Route path="/functionalServices" element={<Functional/>}/>
+
+      <Route path="/cloudComp" element={<SapCloud/>}/>
+
+      <Route path="/s/4hana" element={<Hana/>}/>
+
+      <Route path="/fiori" element={<Fiori/>}/>
+      
+      <Route/>
+
+      <Route path="/sapAnalytics" element={<SAPAnalytics/>}/>
+
+      <Route path="/technicalServices" element={<TechService/>}/>
+
+      <Route path="/infra" element={<Infra/>}/>
+
+      
      </Routes>
      
     <Footer socialLinks={socialLinks}/>

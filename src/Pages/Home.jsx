@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Carousel from '../Components/Home/Carousel'
-// import Cards from './Home_Components/Cards'
-// import Slider from '../Components/Home/Slider'
+import Cards from '../Components/Home/Cards'
+import Slider from '../Components/Home/Slider'
 import Credentials from '../Components/Home/Credentials'
 // import Awards from './Home_Components/Awards'
 import Services from '../Components/Home/Services'
@@ -18,12 +18,12 @@ const Home = ({isLoding, showSpinner}) => {
       {isLoding ? <Spinner/> :
       <>
       <Carousel/>
-      {/* <Cards/> */}
+      <Cards/>
       <Services/>
       <Clients/>
       <Credentials/>
       {/* <Awards/> */}
-      {/* <Slider/> */}
+      <Slider/>
       <Contact/>
    
       </>

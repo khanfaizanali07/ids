@@ -63,13 +63,13 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
       <summary className="m-1">SAP Offerings</summary>
       <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
         <li><Link to='/SapOfferings'>SAP Services</Link></li>
-        <li><a>Core Functional Services</a></li>
-        <li><a>S/4HANA</a></li>
-        <li><a>Cloud</a></li>
-        <li><a>Fiori</a></li>
-        <li><a>Analytics</a></li>
-        <li><a>Technical Services</a></li>
-        <li><a>Infra (BASIS)</a></li>
+        <li><Link to='/functionalServices'>Core Functional Services</Link></li>
+        <li><Link to='/s/4hana'>S/4HANA</Link></li>
+        <li><Link to='/cloud'>Cloud</Link></li>
+        <li><Link to='/fiori'>Fiori</Link></li>
+        <li><Link to='analytics'>Analytics</Link></li>
+        <li><Link to='/technicalServices'>Technical Services</Link></li>
+        <li><Link to='/infra'>Infra (BASIS)</Link></li>
   </ul>
  </details>
 </li>
@@ -163,13 +163,13 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 <label tabIndex={0} className="cursor-pointer hover:text-blue-600">SAP Offerings</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to='/SapOfferings'>SAP Services</Link></li>
-                  <li><a>Core Functinal Services</a></li>
-                  <li><a>S/4HANA</a></li>
-                  <li><a>Cloud</a></li>
-                  <li><a>Fiori</a></li>
-                  <li><a>Analytics</a></li> 
-                  <li><a>Technical Services</a></li>
-                  <li><a>Infra (BASIS)</a></li>
+                  <li><Link to='/functionalServices'>Core Functional Services</Link></li>
+                  <li><Link to='/s/4hana'>S/4HANA</Link></li>
+                  <li><Link to='/cloudComp'>Cloud</Link></li>
+                  <li><Link to='/fiori'>Fiori</Link></li>
+                  <li><Link to='/sapAnalytics'>Analytics</Link></li>
+                  <li><Link to='/technicalServices'>Technical Services</Link></li>
+                  <li><Link to='/infra'>Infra (BASIS)</Link></li>
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">

@@ -10,6 +10,7 @@ const initialValues = {
   email: "",
   phoneNo: "",
   service: "Select Which Digital Service You Want *",
+  service1: "Select Which Digital Service You Want *",
   message: ""
 }
 const EnquiryForm = () => {
@@ -102,7 +103,7 @@ const EnquiryForm = () => {
             )}
             {errors.service && touched.service ? <p className="text-[#336298] font-bold text-sm">{errors.service}</p> : null}
             {currentSection2 && (
-              <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs"name="service" id="service" value={values.service} onChange={handleChange} onBlur={handleBlur}>
+              <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs"name="service1" id="service1" value={values.service1} onChange={handleChange} onBlur={handleBlur}>
               <option disabled selected>Select Which SAP Service You Want *</option>
               <option>SAP ECC Core Services (FICO, SD, MM, PP, HR, etc)</option>
               <option>SAP S/4HANA Services (On-Premises & On-Cloud)</option>
