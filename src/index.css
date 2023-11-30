@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.card:hover .cont > .h-slide{
+    bottom : 0px;
+    z-index: 5;
+
+}
+.card:hover .img-container > img{
+    transform: scale(110%);
+    filter: blur(8px);
+  -webkit-filter: blur(8px);    
+}
+.h-slide{
+    /* display: none; */
+    bottom: -140px;
+    transition: all ease-in-out;
+    transition-duration: 0.5s; 
+}
