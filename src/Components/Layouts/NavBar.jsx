@@ -33,11 +33,12 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
             </div>
       </div>
 
-      <nav className="flex justify-between shadow-md lg:flex place-content-evenly lg:justify-around w-full h-20 items-center sticky top-0 z-40 bg-[#c2deff]">
-        <div className="flex items-start ml-4  lg:items-center ">
+      <div className='w-full bg-[#c2deff] sticky top-0 z-40 shadow-md'>
+      <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center">
+        <div className="flex items-start  lg:items-center ">
           <Link to="/"><img src={ids18} alt="Logo" className='h-12'/></Link>
         </div>
-        <div className="flex mr-8 z-40 lg:hidden">
+        <div className="flex z-40 lg:hidden">
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
@@ -240,9 +241,10 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
         </ul>
         <button className="hidden lg:flex btn bg-[#336298] mr-4 text-white hover:opacity-0.100 hover:bg-black"><Link to='/enquiryForm'>Enquiry Form</Link></button>
       </nav>
-       
+      </div>   
 
     </>
+
   )
 }
 

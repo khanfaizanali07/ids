@@ -15,7 +15,31 @@
 }
 .h-slide{
     /* display: none; */
-    bottom: -140px;
+    bottom: -120px;
     transition: all ease-in-out;
     transition-duration: 0.5s; 
+}
+/* .card:hover .cont > .h-slides{
+    bottom : 50px;
+    z-index: 5;
+
+} */
+/* this class(styling) is for ERP -> SAP */
+.h-slides{
+    /* display: none; */
+    /* position:absolute; */
+    z-index : 5;
+    /* bottom: 240px; */
+    /* top:1px; */
+}
+.h-slides-2{
+    position: absolute;
+    bottom:-140px;
+    transition: all ease-in-out;
+    transition-duration: 0.5s; 
+}
+.card:hover .cont > .h-slides-2{
+    bottom : 0px;
+    z-index: 10;
+
 }

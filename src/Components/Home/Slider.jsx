@@ -45,11 +45,12 @@ const Slider = () => {
   ]
   
     return (
-    <div className='w-full py-[25px] px-[10px]'>
+    <div className='w-full py-[25px] px-[5px]'>
       <div>
         <Swiper
             modules={[Autoplay, Pagination]}
             centeredSlides={true}
+            spaceBetween={20}
             loop={true} 
             autoplay={{
               delay: 2000,
@@ -72,9 +73,9 @@ const Slider = () => {
               }
             }}
             className="mySwiper w-[350px]  sm:w-[600px] lg:w-full lg:ps-[340px] p-[10px]">
-            {sliderDetails.map((details)=>
+            {sliderDetails.map((details,index)=>
               <SwiperSlide>      
-                <SliderComponent sliderDetails={details} />
+                <SliderComponent sliderDetails={details} key={"ab"+index} />
            </SwiperSlide>
 )}
 </Swiper>

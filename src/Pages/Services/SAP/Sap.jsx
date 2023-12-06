@@ -11,39 +11,33 @@ const Sap = () => {
   const sapObj = [
     {
         image: sap1,
-        heading: 'Cost Optimization',
-        text: 'Reduce SAP Infrastructure support cost with an offshore resource staffing model.',
-        style: 'p-10 pt-10'
+        heading: <><p>Cost Optimization</p></>,
+        text: <><p className='py-[24px]'>Reduce SAP Infrastructure support cost with an offshore resource staffing model.</p></>
     },
     {
       image: sap2,
-      heading: 'Speed/Capacity',
-      text: '24*7 Timely Support Coverage Period',
-      style: 'p-16 pt-8'
+      heading: <><p>Speed/Capacity</p></>,
+      text: <><p className='py-[24px]'><br/>24*7 Timely Support Coverage Period</p></>
     },
     {
       image: sap3,
-      heading: <><h1>Quality</h1></>,
-      text: <p  className="pt-[20px]">The offshore SAP Application Management <br/> resource delivery model, translates to a high degree of engagement quality, <br/> lower risks and measurable economic value.</p>,
-      style: 'pt-6'
+      heading: <><p>Quality Management</p></>,
+      text: <p>The offshore SAP Application Management resource delivery model, translates to a high degree of engagement quality, lower risks and measurable economic value.</p>
     },
     {
       image: sap4,
-      heading: 'Risk Management',
-      text: 'All engagements follow a proven methodology and focus on best practices.',
-      style: 'p-10 pt-10'
+      heading: <><p>Risk Management</p></>,
+      text: <><p className='py-[24px]'>All engagements follow a proven methodology and focus on best practices.</p></>
     },
     {
       image: sap5,
-      heading: 'Expand SAP Functional Support Expertise',
-      text: 'Projects often require specific skills unavailable within internal staff - increases the availability of skills and capacities for SAP projects.',
-      style: 'p-4 pt-2'
+      heading: <><p>Expand SAP </p></>,
+      text: <><p className='py-[12px]'>Projects often require specific skills unavailable within internal staff - increases the availability of skills and capacities for SAP projects.</p></>
     },
     {
       image: sap6,
-      heading: 'Re-direct Internal Staff',
-      text: 'Allows internal IT staff to work on strategic projects, while the iDS SAP Functional support team maintains existing SAP landscape help desk support.',
-      style: 'p-[14px] pt-10'
+      heading: <><p >Re-direct Internal Staff</p></>,
+       text: <><p className='py-[12px]'>Allows internal IT staff to work on strategic projects, while the iDS SAP Functional support team maintains existing SAP landscape help desk support.</p></>
     }
   ]
   return (

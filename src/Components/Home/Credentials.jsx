@@ -18,14 +18,14 @@ const Credentials = () => {
     ]
 
   return (
-    <div>
-      <div className='Parent bg-[#336298] lg:w-full py-12 lg:flex lg:justify-center'>
+    <div className='w-full bg-[#336298]'>
+      <div className='container px-[10px] sm:px-0 md:px-0 lg:px-[72px] py-12 lg:flex lg:justify-center'>
         
-        <div className=' flex flex-col justify-center  gap-5  lg:w-[640px] lg:h-full'>
-        <h5 className='text-center  mt-2 text-xl sm:text-2xl lg:text-xl font-sans font-semibold text-slate-500 tracking-widest ' >
+        <div className='container flex flex-col justify-center lg:ps-[30px] gap-[15px] lg:h-full '>
+        <h5 className='text-center  mt-[30px] text-xl sm:text-2xl lg:text-xl font-sans font-semibold text-slate-700 tracking-widest ' >
             OUR COMPANY
         </h5>
-        <h1 className='text-3xl sm:text-4xl lg:text-5xl font-thin text-[#9AB2CC] font-nunito text-center'>
+        <h1 className='text-3xl sm:text-4xl lg:text-4xl font-thin text-[#9AB2CC] font-nunito text-center '>
             Share the joy of achieving <span className='bg-gradient-to-r from-blue-300 to-red-400 bg-clip-text text-transparent '>Glorious Moments</span> & ascend up the top.
         </h1>
         {
@@ -33,7 +33,7 @@ const Credentials = () => {
              <CredentialComponent details = {details}/>
         )}
         </div>
-        <div className='flex items-center justify-center lg:w-[640px] lg:h-full'>
+        <div className='container flex items-center justify-center lg:h-full '>
             <img src={credImg} alt="image" className='h-[550px] w-[550px] overflow-hidden'/>
         </div>
     </div>  

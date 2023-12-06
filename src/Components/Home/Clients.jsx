@@ -186,7 +186,7 @@ const Clients = () => {
         className="mySwiper w-full "
       >
         {clientImages1.map((images, index) =>
-          <SwiperSlide> <a href={images.href} key={index} target={images.target}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
+          <SwiperSlide> <a href={images.href} key={"ef "+index} target={images.target}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
         )}
         
       </Swiper>
