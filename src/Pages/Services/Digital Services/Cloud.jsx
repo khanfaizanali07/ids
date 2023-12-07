@@ -60,13 +60,13 @@ const Cloud = () => {
     <div className="bg-[#f6fafe]">
             <h1 className="text-4xl font-bold text-center py-10">Cloud Service Models</h1>
             <div className="flex justify-center items-center">
-                <div className="grid grid-cols-1  md:grid-cols-2 md:gap-5 lg:card lg:grid lg:grid-cols-3 lg:gap-5 pb-8">
+                <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 lg:card lg:grid  gap-10 pb-8">
                     {cloudObj.map((obj, index) => <CloudCards key={'a'+index} obj={obj}/>)}
                 </div>
             </div>
             <h1 className="text-center text-2xl font-bold py-10">Deployment Models</h1>
             <div className="flex justify-center items-center overflow-hidden">
-                <div className="grid grid-cols-1  md:grid-cols-2 md:gap-5 lg:card lg:grid lg:grid-cols-4 lg:gap-5 pb-8">
+                <div className="grid grid-cols-2  md:grid-cols-4 lg:card lg:grid lg:grid-cols-4 gap-7 pb-8">
                     {deployObj.map((dep, index) => <DeployCards key={'b'+index} dep={dep}/>)}
                 </div>
             </div>

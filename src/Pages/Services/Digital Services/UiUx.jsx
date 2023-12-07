@@ -69,19 +69,19 @@ const UiUx = () => {
    <div className="bg-[#f6fafe]">
         <div className="w-full flex items-center flex-col pl-4 pt-16 md:p-14 md:flex-row gap-4">
             <div className="md:w-[70%] w-full">
-                <h1 className="text-2xl font-bold"><span className="bg-gradient-to-r from-blue-300 to-red-400 bg-clip-text text-transparent">UI/UX</span> Design & Development Services</h1>
-                <p className="pl-2 text-justify md:pr-24 pr-8 text-md">User Engagement is a very important factor for the success of any digital product. Therefore, we don't stop until we get an eye-catching and engaging design. We go to the edge to design error free and appealing UI UX which resonate with the target audiences.</p>
+                <h1 className="text-2xl font-bold lg:pl-[50px]"><span className="bg-gradient-to-r from-blue-300 to-red-400 bg-clip-text text-transparent">UI/UX</span> Design & Development Services</h1>
+                <p className="lg:pl-[54px] text-justify md:pr-24 pr-8 text-md">User Engagement is a very important factor for the success of any digital product. Therefore, we don't stop until we get an eye-catching and engaging design. We go to the edge to design error free and appealing UI UX which resonate with the target audiences.</p>
             </div>
             <div className="md:w-[30%] w-full">
                 <img src={ui1} alt="UI/UX"/>
             </div>
         </div>
         <div className="pr-8">
-            <h1 className="text-2xl font-bold pl-4 md:pl-14">Our<span className="bg-gradient-to-r from-blue-300 to-red-400 bg-clip-text text-transparent"> UI/UX</span> Design System</h1>
+            <h1 className="text-2xl font-bold lg:pl-[50px] pl-4">Our<span className="bg-gradient-to-r from-blue-300 to-red-400 bg-clip-text text-transparent"> UI/UX</span> Design System</h1>
             </div>
             <p className="pl-6 md:pl-16 text-justify md:pr-10 pr-4">We have developed our ui ux design methodology according to well known principles patterns and frameworks which ensure code consistency, code modularity and a sophisticated product development process. Components of the design system are reusable across multiple parts of a product and even across different projects.</p>
             <div className="flex w-full md:flex-row flex-col px-6 mt-4">
-                <div className="md:pl-11 gap-4 grid lg:grid-cols-1 2xl:grid-cols-2 md:w-1/2 w-full place-items-center">
+                <div className="md:pl-11 gap-4 flex flex-wrap md:w-1/2 w-full place-items-center">
                 <div onClick={() => handlePara1()} className="shadow-lg w-60 py-4 flex items-center cursor-pointer hover:shadow-2xl border-2 border-gray-300 rounded-lg">
                     <img src={ui2} alt="image" className="w-14 pl-2"/>
                     <p className="ml-2">Information Organisation</p>

@@ -43,7 +43,7 @@ const Iot = () => {
   return (
     <div className="bg-[#f6fafe]">
         <h1 className="text-center text-4xl font-bold py-10">Internet of Things</h1>
-       <div className="flex justify-center items-center flex-wrap gap-28">
+       <div className="flex justify-center items-center flex-wrap gap-20">
             {iotObj.map((item, index) => <IotCard key={'i'+index} item={item}/>)}
     </div>
     </div>

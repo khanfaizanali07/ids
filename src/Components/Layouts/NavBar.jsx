@@ -35,7 +35,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
 
       <div className='w-full bg-[#c2deff] sticky top-0 z-40 shadow-md'>
       <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center ">
-        <div className="flex items-start  lg:items-center ">
+        <div className="flex items-start  lg:items-center">
           <Link to="/"><img src={ids18} alt="Logo" className='h-12'/></Link>
         </div>
         <div className="flex z-40 lg:hidden">
@@ -48,111 +48,133 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
     <ul className="menu p-4 w-60 min-h-full bg-base-200 text-base-content">
       <Link to="/"><img src={ids18} alt="Logo" className='h-20 ml-8'/></Link>
-      <li><Link className="m-1 mt-20" to='/'>Home</Link></li>
-      <li><details className="dropdown">
-      <summary className="m-1">Company</summary>
-      <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-        <li><Link to='/about'>About Us</Link></li>
-        <li><Link to='/contact'>Contact Us</Link></li>
-        <li><Link to='/careers'>Careers</Link></li>
-        <li><Link to='/enquiryForm'>Enquiry Form</Link></li>
-    </ul>
-</details>
-</li>
-<li>
-  <details className="dropdown">
-      <summary className="m-1">SAP Offerings</summary>
-      <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-        <li><Link to='/SapOfferings'>SAP Services</Link></li>
-        <li><Link to='/functionalServices'>Core Functional Services</Link></li>
-        <li><Link to='/s/4hana'>S/4HANA</Link></li>
-        <li><Link to='/cloud'>Cloud</Link></li>
-        <li><Link to='/fiori'>Fiori</Link></li>
-        <li><Link to='analytics'>Analytics</Link></li>
-        <li><Link to='/technicalServices'>Technical Services</Link></li>
-        <li><Link to='/infra'>Infra (BASIS)</Link></li>
-  </ul>
- </details>
-</li>
-<li>
-  <details className="dropdown">
-      <summary className="m-1">Our Services</summary>
-      <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-      <li><a className="cursor-pointer" onClick={showDropdown1} >Digital Services</a></li>
-                  <li><a className="cursor-pointer" onMouseOver={showDropdown2}>Managed Services</a></li>
-                  <li><a className="cursor-pointer" onMouseOver={showDropdown3}>Infrastructure Services</a></li>
-                  <li><a className="cursor-pointer" onMouseOver={showDropdown4}>IT Buisness & Consulting</a></li>
-                  <li><a className="cursor-pointer" onMouseOver={showDropdown5}>ERP Solutions</a></li>
-  </ul>
-  {Show1 && (
-                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-8">
-                  <label tabIndex={0} className="cursor-pointer font-bold">Digital Services</label>
-                  <li><Link to='/cloud'>Cloud</Link></li>
-                  <li><Link to='/analytics'>Data Analytics</Link></li>
-                  <li><Link to='/iot'>Internet of Things</Link></li>
-                  <li><Link to='/marketing'>Digital Marketing</Link></li>
-                  <li><Link to='/mobility'>Mobility</Link></li>
-                  <li><Link to='/uiux'>UI/UX</Link></li>
-                  <li><Link to='/portal'>Portal/Website</Link></li>
-                  </ul>)
-                }
-                {Show2 && (
-                  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-14">
-                  <label tabIndex={0} className="cursor-pointer font-bold">Managed Services</label>
-                  <li><a>Application Development & Support</a></li>
-                  <li><a>Application Managed Services</a></li>
-                  <li><a>IT Operations</a></li>
-                  </ul>)
-                }
-                {Show3 && (
-                  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-24">
-                  <label tabIndex={0} className="cursor-pointer font-bold">Infrastructure Management</label>
-                  <li><a>Cloud & on Premise Management</a></li>
-                  <li><a>Network Managemnent</a></li>
-                  <li><a>Data Migration</a></li>
-                  </ul>)
-                }
-                {Show4 && (
-                  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-32">
-                  <label tabIndex={0} className="cursor-pointer font-bold">IT Buisness & Consulting</label>
-                  <li><Link to='/process'>Process Transformation & Enhancement</Link></li>
-                  <li><a>Agile & DevOps</a></li>
-                  <li><a>IT Governance & Strategy</a></li>
-                  <li><a>Information Strategy & Governance</a></li>
-                  <li><a>Quality Assurance Strategy & process</a></li>
-                </ul>)
-                }
-                {Show5 && (
-                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 mt-40">
-                  <label tabIndex={0} className="cursor-pointer font-bold">ERP Solutions</label>
-                  <li><Link to='/sap'>SAP</Link></li>
-                  <li><a>Microsoft</a></li>
-                </ul>)
-                }
- </details>
-</li>
-<li>
-  <details className="dropdown">
-      <summary className="m-1">Credentials</summary>
-      <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-        <li><Link to="/industries">Industries Domain</Link></li>
-        <li><Link to="/consultant">Consultant Portfolio</Link></li>
-  </ul>
- </details>
-</li>
+      <li><Link className="m-1 mt-10 text-xl font-medium" to='/'>Home</Link></li>
+    
+      <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3"/> 
+          <div className="collapse-title text-xl font-medium">
+            Company
+          </div>
+          <div className="collapse-content"> 
+            <li><Link to='/about' className="font-bold">About Us</Link></li>
+            <li><Link to='/contact' className="font-bold">Contact Us</Link></li>
+            <li><Link to='/careers' className="font-bold">Careers</Link></li>
+            <li><Link to='/enquiryForm' className="font-bold">Enquiry Form</Link></li>
+          </div>
+        </div>
+      
+        <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3"/> 
+          <div className="collapse-title text-xl font-medium">
+            SAP Offerings
+          </div>
+          <div className="collapse-content"> 
+            <li><Link to='/SapOfferings' className="font-bold">SAP Services</Link></li>
+            <li><Link to='/functionalServices' className="font-bold">Core Functional Services</Link></li>
+            <li><Link to='/s/4hana' className="font-bold">S/4HANA</Link></li>
+            <li><Link to='/cloud' className="font-bold">Cloud</Link></li>
+            <li><Link to='/fiori' className="font-bold">Fiori</Link></li>
+            <li><Link to='analytics' className="font-bold">Analytics</Link></li>
+            <li><Link to='/technicalServices' className="font-bold">Technical Services</Link></li>
+            <li><Link to='/infra' className="font-bold">Infra (BASIS)</Link></li>
+          </div>
+        </div>
+      
+        <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3"/> 
+          <div className="collapse-title text-xl font-medium">
+            Our Services
+          </div>
+          <div className="collapse-content">
+          <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-2" /> 
+          <div className="collapse-title text-xl font-medium">
+            Digital Services
+          </div>
+          <div className="collapse-content">
+                  <li><Link to='/cloud' className="font-bold">Cloud</Link></li>
+                  <li><Link to='/analytics' className="font-bold">Data Analytics</Link></li>
+                  <li><Link to='/iot' className="font-bold">Internet of Things</Link></li>
+                  <li><Link to='/marketing' className="font-bold">Digital Marketing</Link></li>
+                  <li><Link to='/mobility' className="font-bold">Mobility</Link></li>
+                  <li><Link to='/uiux' className="font-bold">UI/UX</Link></li>
+                  <li><Link to='/portal' className="font-bold">Portal/Website</Link></li>
+          </div>
+          </div> 
+          <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-2" /> 
+          <div className="collapse-title text-xl font-medium">
+          Managed Services
+          </div>
+          <div className="collapse-content">
+          <li><a className="font-bold">Application Development & Support</a></li>
+                  <li><a className="font-bold">Application Managed Services</a></li>
+                  <li><a className="font-bold">IT Operations</a></li>
+          </div>
+          </div> 
+            <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-2" /> 
+          <div className="collapse-title text-xl font-medium">
+          Infrastructre Services
+          </div>
+          <div className="collapse-content">
+          <li><a className="font-bold">Cloud & on Premise Management</a></li>
+                  <li><a className="font-bold">Network Managemnent</a></li>
+                  <li><a className="font-bold">Data Migration</a></li>
+          </div>
+          </div> 
+          <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-2" /> 
+          <div className="collapse-title text-xl font-medium">
+          IT Buisness & Consulting
+          </div>
+          <div className="collapse-content">
+                  
+                  <li><Link to='/process' className="font-bold">Process Transformation & Enhancement</Link></li>
+                  <li><Link to='/agile' className="font-bold">Agile & DevOps</Link></li>
+                  <li><Link to='/governence' className="font-bold">IT Governance & Strategy</Link></li>
+                  <li><a className="font-bold">Information Strategy & Governance</a></li>
+                  <li><a className="font-bold">Quality Assurance Strategy & process</a></li>
+          </div>
+          </div> 
+          <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-2" /> 
+          <div className="collapse-title text-xl font-medium">
+          ERP Solutions
+          </div>
+          <div className="collapse-content">
+          <li><Link to='/sap' className="font-bold">SAP</Link></li>
+              <li><a className="font-bold">Microsoft</a></li>
+          </div>
+          </div> 
+          </div>
+        </div>
+     
+        <div className="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" /> 
+          <div className="collapse-title text-xl font-medium">
+            Credentials
+          </div>
+          <div className="collapse-content"> 
+            <li><Link to="/industries" className="font-bold">Industries Domain</Link></li> 
+            <li><Link to="/consultant" className="font-bold">Consultant Portfolio</Link></li>  
+          </div>
+        </div>
+      
+
         <div className="flex gap-4 justify-center mt-24 text-xl">
     {socialLinks?.map((social, index) =>  <a key={"t_"+index} className= {social.styles} href={social.href} target='_blank' >{social.icon}</a>)}
-    </div> 
-    </ul>
-       
+    </div>
+    </ul>    
   </div>
 </div>
+
         </div>
         <ul className="hidden lg:flex">
             <li className='flex gap-4 items-center'>
-            <Link to='/'>Home</Link>
+            <Link to='/' className="font-semibold hover:text-blue-600">Home</Link>
               <div className="dropdown dropdown-hover z-40">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Company</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Company</label>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><Link to='/about'>About Us</Link></li>
                   <li><Link to='/contact'>Contact Us</Link></li>
@@ -161,7 +183,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">SAP Offerings</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">SAP Offerings</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to='/SapOfferings'>SAP Services</Link></li>
                   <li><Link to='/functionalServices'>Core Functional Services</Link></li>
@@ -174,7 +196,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Our Services</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Our Services</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                 <div className="dropdown dropdown-hover dropdown-right z-100">
                   <li><a className="cursor-pointer" onMouseOver={showDropdown1}>Digital Services</a></li>
@@ -214,8 +236,8 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                   <ul tabIndex={1} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52 ml-2 mt-28">
                   <label tabIndex={0} className="cursor-pointer font-bold">IT Buisness & Consulting</label>
                   <li><Link to='/process'>Process Transformation & Enhancement</Link></li>
-                  <li><a>Agile & DevOps</a></li>
-                  <li><a>IT Governance & Strategy</a></li>
+                  <li><Link to='/agile'>Agile & DevOps</Link></li>
+                  <li><Link to='/governence'>IT Governance & Strategy</Link></li>
                   <li><a>Information Strategy & Governance</a></li>
                   <li><a>Quality Assurance Strategy & process</a></li>
                 </ul>)
@@ -231,7 +253,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Credentials</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Credentials</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to="/industries">Industries Domain</Link></li>
                   <li><Link to="/consultant">Consultant Portfolio</Link></li>  

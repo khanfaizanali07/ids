@@ -46,7 +46,12 @@ const Services = () => {
 
     ]
   return (
+<<<<<<< HEAD
     <div className='pt-[90px] sm:pt-[75px] md:pt-[200px] '>
+=======
+    <div className="w-full">
+    <div className='pt-[90px] sm:pt-[50px] md:pt-[200px] container'>
+>>>>>>> 42ccc001c7dbf4afbf8cdd7172db58b3856d9e1c
     <p className="text-center  font-bold  text-slate-500 ">REASON TO CHOOSE US</p>
     <h1 className='text-center text-lg lg:text-3xl font-bold '>For your very specific industry,<br/>
         we have<br/>
@@ -54,6 +59,7 @@ const Services = () => {
     <div className="flex items-center justify-center p-[30px] ">
         <div className='grid sm:grid-cols-2 sm:gap-[25px] lg:grid-cols-3  lg:gap-[15px]'>
             {cardDetails.map((item, index) => <ServiceCard key={index} item={item}/>)}
+    </div>
     </div>
     </div>
     </div>

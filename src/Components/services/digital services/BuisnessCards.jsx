@@ -3,7 +3,7 @@ import React from 'react'
 const BuisnessCards = ({buisness}) => {
   return (
     <div>
-        <div className={`card card-side bg-base-100 md:w-[400px] sm:w-[400px] w-[300px] shadow-xl cursor-pointer hover:animate-pulse transition ease-in-out duration-1000 hover:transition hover:scale-110 hover:ease-in-out hover:duration-700 ${buisness.styles}`}>
+        <div className={`card card-side bg-base-100 md:w-[300px] sm:w-[300px] w-[300px] shadow-xl cursor-pointer hover:animate-pulse transition ease-in-out duration-1000 hover:transition hover:scale-110 hover:ease-in-out hover:duration-700 ${buisness.styles}`}>
             <figure className="px-5 pt-5">
                 <img src={buisness.image} alt="Shoes" className="rounded-xl"/>
             </figure>

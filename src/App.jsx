@@ -29,6 +29,8 @@ import Fiori from "./Pages/SAP Offerings/Fiori"
 import SAPAnalytics from "./Pages/SAP Offerings/SAPAnalytics"
 import TechService from "./Pages/SAP Offerings/TechService"
 import Infra from "./Pages/SAP Offerings/Infra"
+import Agile from "./Pages/IT Buisness/Agile"
+import ItGovernence from "./Pages/IT Buisness/ItGovernence"
 
 
 function App() {
@@ -170,7 +172,9 @@ function App() {
 
       <Route path="/infra" element={<Infra/>}/>
 
-      
+      <Route path="/agile" element={<Agile/>}/>
+
+      <Route path="/governence" element={<ItGovernence/>}/>
      </Routes>
      
     <Footer socialLinks={socialLinks}/>

@@ -121,13 +121,13 @@ const Mobility = () => {
   return (
     <>
         <div className="bg-[#f6fafe]">
-            <h1 className="text-center text-4xl font-bold py-20">Mobility</h1>
+            <h1 className="text-center text-4xl font-bold py-10">Mobility</h1>
             <div className="md:pl-20 pl-4 pb-8 hover:transition-all">
-                <img src={mobility1} alt="Mobile Image" className="inline md:w-40 w-20"/>
+                <img src={mobility1} alt="Mobile Image" className="inline md:w-40 w-20 pl-4"/>
                 <h1 className="text-2xl font-bold inline text-center">Mobile Application Development</h1>
-                <p className="block">Full stack Mobile app development from analysis & design to live phase, iDS offers enterprise and consumer applications using standard industrialized processes, resources, and tools that differentiate our clients in the market and enhance productivity & efficiency. Platforms: Android™, Apple® iOS, Windows using Native and Cross Platform application development approach, Responsive & Dynamic Mobile-Web Applications.</p>
+                <p className="block text-justify lg:px-8 lg:pr-0 pr-2">Full stack Mobile app development from analysis & design to live phase, iDS offers enterprise and consumer applications using standard industrialized processes, resources, and tools that differentiate our clients in the market and enhance productivity & efficiency. Platforms: Android™, Apple® iOS, Windows using Native and Cross Platform application development approach, Responsive & Dynamic Mobile-Web Applications.</p>
             </div>
-            <div className="flex justify-center items-center flex-wrap gap-20">
+            <div className="flex justify-center items-center flex-wrap gap-8">
                 {mobObj.map((mob, index) => <MobileMockup mob={mob} key={'f'+index}/>)}
             </div>
             <div>

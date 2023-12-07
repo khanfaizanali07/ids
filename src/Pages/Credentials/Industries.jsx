@@ -59,7 +59,7 @@ const Industries = () => {
     <div className="bg-[#f6fafe]">
       <p className="text-center font-bold text-lg text-slate-500 p-4">Industries We Serve</p>
       <h1 className="text-center text-2xl font-bold lg:px-40">We Offer Trusted and Reliable SAP Services and Solutions to Companies from Various Sectors.</h1>
-      <div className="flex flex-wrap gap-16 px-20 justify-center items-center py-10">
+      <div className="flex flex-wrap gap-10 px-4 justify-center  items-center py-10">
           {industriesObj.map((obj, index) => <IndustriesCard obj={obj} key={'k'+index}/> )}
       </div>
     </div>
