@@ -60,11 +60,11 @@ const AboutUs = () => {
           <p className="text-black text-md pt-4">Founded in 2018 with an Idea of providing IT Services and Solutions to the Corporate and Consumer industries, iDiligence Solutions is the next-gen IT enterprise focused on SAP and Digital Services.</p>
         </div>
       </div>
-      <div className="lg:flex lg:justify-center lg:flex-row md:flex-row md:items-center bg-[#336298] w-full lg:mt-20 lg:pt-20 lg:pb-20 md:flex sm:flex sm:flex-col sm:justify-center sm:items-center sm:pb-26 flex justify-center items-center flex-col pb-40">
+      <div className="lg:flex lg:justify-center lg:flex-row md:flex-row md:items-center bg-[#336298] w-full lg:mt-20 lg:pt-20 lg:pb-20 md:flex sm:flex sm:flex-col sm:justify-center sm:items-center sm:pb-26 flex justify-center items-center flex-col pb-40">  
           <div className="w-1/2 lg:pl-20">
               <p className="text-md text-slate-500">What We Do</p>
               <b className="lg:text-4xl md:text-xl text-[#9AB2CC]">We Offer <span className="bg-gradient-to-r from-blue-300 to-red-400 bg-clip-text text-transparent">IT Solutions</span> <br/> For Your Problems</b>
-              {keyPoints.map((key, index) => <div key={index} className="flex [perspective:1000px]">
+              {keyPoints.map((key, index) => <div key={index} className="flex [perspective:1000px]">      
                 <h1 className="lg:pt-2 pt-6 gradient-text lg:text-4xl  transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">{key.icon}</h1>
                 <p className="lg:text-lg md:text-sm pt-6 lg:ml-2 md:ml-0 text-white" key={index}>{key.text}</p>
                 </div>)}

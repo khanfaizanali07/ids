@@ -10,7 +10,7 @@ const initialValues = {
   email: "",
   phoneNo: "",
   service: "Select Which Digital Service You Want *",
-  service1: "Select Which Digital Service You Want *",
+  service1: "Select Which SAP Service You Want *",
   message: ""
 }
 const EnquiryForm = () => {
@@ -39,7 +39,7 @@ const EnquiryForm = () => {
     <BreadCrumb heading={"Enquiry Form"} link={"Enquiry Form"} />
     
     <div className="flex lg:flex-row md:justify-center w-full  flex-wrap flex-col">
-        <div className="lg:w-1/2 w-full bg-[#336298] lg:pl-20 pl-6 py-20">
+        <div className="lg:w-1/2 w-full bg-[#336298] lg:pl-28 pl-4 py-20">
           <h1 className="md:text-4xl text-xl font-bold text-[#9AB2CC]">Let's get in touch</h1>
           <p className="md:text-xl text-md text-white py-20">We Love to hear from you. Our friendly team <br/> is always here to Response.</p>
           <FaPhone className="md:text-4xl text-xl border-2 border-black lg:ml-2 ml-2 p-1 inline"/>
@@ -87,7 +87,7 @@ const EnquiryForm = () => {
                </div>
                <div className='w-full mt-4 px-4'>
             {currentSection1 && (
-                <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs" name="service" id="service" value={values.service} onChange={handleChange} onBlur={handleBlur}>
+                <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs" name="service" id="service" value={values.service} onChange={handleChange} onBlur={handleBlur}  required>
                  <option disabled selected>Select Which Digital Service You Want *</option>
                  <option>Cloud (Amazon & Azure)</option>
                  <option>Data Analytics (PowerBI, Tableu, QlikView)</option>
@@ -101,9 +101,9 @@ const EnquiryForm = () => {
                  <option>NA</option>
              </select>
             )}
-            {errors.service && touched.service ? <p className="text-[#336298] font-bold text-sm">{errors.service}</p> : null}
+            {errors.service1 && touched.service1 ? <p className="text-[#336298] font-bold text-sm">{errors.service1}</p> : null}
             {currentSection2 && (
-              <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs"name="service1" id="service1" value={values.service1} onChange={handleChange} onBlur={handleBlur}>
+              <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs"name="service1" id="service1" value={values.service1} onChange={handleChange} onBlur={handleBlur}  required>
               <option disabled selected>Select Which SAP Service You Want *</option>
               <option>SAP ECC Core Services (FICO, SD, MM, PP, HR, etc)</option>
               <option>SAP S/4HANA Services (On-Premises & On-Cloud)</option>

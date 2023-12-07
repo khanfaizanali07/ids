@@ -123,7 +123,7 @@ const Consultant = () => {
   return (
     <div>
       <h1 className="text-4xl text-center font-bold py-4">Consultants Portfolio</h1>
-      <div className="flex justify-center items-center flex-wrap gap-6 p-4">
+      <div className="flex justify-center items-center flex-wrap gap-10 p-4">
           <p className={`p-4 w-80 text-center font-bold cursor-pointer rounded-lg transition-all duration-1000 ${sapCertification ? 'border-2 border-[#336298] text-[#336298]' : 'border-2 border-gray-300 text-gray-300'}`} onClick={()=> handleSap()}>SAP Certification <br/> & Experience</p>
           <p className={`p-4 w-80 text-center font-bold cursor-pointer rounded-lg transition-all duration-1000 ${dev ? 'border-2 border-[#336298] text-[#336298]' : 'border-2 border-gray-300 text-gray-300'}`} onClick={()=> handleDev()}>Development, Cloud & Analytics Consultants</p>
           <p className={`p-4 w-80 text-center font-bold cursor-pointer rounded-lg transition-all duration-1000 ${process ? 'border-2 border-[#336298] text-[#336298]' : 'border-2 border-gray-300 text-gray-300'}`} onClick={()=> handleProcess()}>Process & Project Management Consultant</p>

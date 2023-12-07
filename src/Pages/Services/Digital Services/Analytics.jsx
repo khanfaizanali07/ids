@@ -50,11 +50,11 @@ const Analytics = () => {
   return (
     <div className="bg-[#f6fafe]">
       <h1 className="text-center text-4xl p-10">Data Analytics</h1>
-      <p className="text-justify text-lg p-10">iDS Data Analytics team provide services for small to mid-level companies & large organizations with solutions like Business Intelligence reports for planning & analytics purpose for future trend growth as data management solutions.</p>
-      <div className="flex justify-center items-center flex-wrap gap-10 lg:px-20 md:px-10 sm:px-0 py-10">
+      <p className="text-justify text-lg lg:px-28 px-4 py-4">iDS Data Analytics team provide services for small to mid-level companies & large organizations with solutions like Business Intelligence reports for planning & analytics purpose for future trend growth as data management solutions.</p>
+      <div className="flex justify-center items-center flex-wrap gap-10 lg:px-4  sm:px-0 py-10">
         {analyticsObj.map((analytics, index)=> <AnalyticsCard analytics={analytics} key={'d'+index}/>)}
       </div>
-      <div className="flex justify-center items-center flex-wrap gap-10 lg:px-20 md:px-10 sm:px-0 py-10">
+      <div className="flex justify-center items-center flex-wrap gap-10 py-10">
         {buisnessObj.map((buisness, index)=> <BuisnessCards buisness={buisness} key={'e'+index}/>)}
       </div>
     </div>

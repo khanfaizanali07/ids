@@ -52,7 +52,7 @@ const Services = () => {
         we have<br/>
         <h1 className=' text-[#336298]'>highly-tailored IT solutions.</h1></h1>
     <div className="flex items-center justify-center p-[30px] ">
-        <div className=' grid grid-cols-1  md:grid-cols-2 md:gap-5 lg:card lg:grid lg:grid-cols-3 lg:gap-5 '>
+        <div className=' grid grid-cols-1  md:grid-cols-2 md:gap-5 lg:grid lg:grid-cols-3 lg:gap-5'>
             {cardDetails.map((item, index) => <ServiceCard key={index} item={item}/>)}
     </div>
     </div>

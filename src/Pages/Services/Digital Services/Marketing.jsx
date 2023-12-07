@@ -40,8 +40,8 @@ const Marketing = () => {
 ]
   return (
     <div className="bg-[#f6fafe]">
-      <h1 className="text-4xl text-center py-8 font-bold">Digital Marketing</h1>
-      <div className="flex justify-center items-center flex-wrap gap-28">
+      <h1 className="text-4xl text-center py-10 font-bold">Digital Marketing</h1>
+      <div className="flex justify-center items-center flex-wrap gap-20">
             {marketingObj.map((item, index) => <MarketingCard key={'j'+index} item={item}/>)}
     </div>
     </div>

@@ -112,7 +112,7 @@ const Portal = () => {
   return (
     <div className="bg-[#f6fafe]">
         <h1 className="text-4xl text-center font-bold py-8">Portal / Website</h1>
-        <div className="flex justify-center items-center flex-wrap gap-8">
+        <div className="flex justify-center items-center flex-wrap gap-10">
           {portalObj.map((portal, index)=> <PortalCard portal={portal} key={'f'+index}/>)}
         </div>
         <h1 className="text-2xl text-center font-bold py-8">E-Commerce Portal</h1>
