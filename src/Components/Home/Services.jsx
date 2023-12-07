@@ -46,7 +46,7 @@ const Services = () => {
 
     ]
   return (
-    <div className='pt-[90px] sm:pt-[50px] md:pt-[200px] '>
+    <div className='pt-[90px] sm:pt-[75px] md:pt-[200px] '>
     <p className="text-center  font-bold  text-slate-500 ">REASON TO CHOOSE US</p>
     <h1 className='text-center text-lg lg:text-3xl font-bold '>For your very specific industry,<br/>
         we have<br/>

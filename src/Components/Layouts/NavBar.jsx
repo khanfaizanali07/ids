@@ -34,7 +34,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
       </div>
 
       <div className='w-full bg-[#c2deff] sticky top-0 z-40 shadow-md'>
-      <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center">
+      <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center ">
         <div className="flex items-start  lg:items-center ">
           <Link to="/"><img src={ids18} alt="Logo" className='h-12'/></Link>
         </div>

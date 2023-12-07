@@ -27,9 +27,9 @@ const Cards = () => {
     ]
   
 return (
-    <> 
-    <div className='w-full  px-[10px] py-[20px] sm:px-0 md:px-0  md:absolute bg-transparent  md:z-10 md:top-[420px]'>
-      <div className='container  md:flex md:justify-center hidden md:gap-[20px] py-[10px] '>
+    <div className='lg:w-full'> 
+    <div className='w-full  px-[10px] py-[20px] sm:px-0 md:px-0  xl:px-[0px] md:absolute bg-transparent  md:z-10 md:top-[420px]'>
+      <div className='container   md:flex md:justify-center lg:container lg:px-[60px] hidden md:gap-[20px] py-[10px] '>
       {cardDetails.map((card,index) => <CardComponent cardDetails={card} key={index}/>)}
       </div>
       </div>
@@ -52,7 +52,7 @@ return (
                     loop:true
                 }
             }}
-            className="mySwiper w-[320px] sm:w-[640px] rounded-lg ">
+            className="mySwiper container px-[10px] sm:px-[0px]  sm:w-[640px] rounded-lg">
             {cardDetails.map((card,index)=>
               <SwiperSlide >
                 <CardComponent cardDetails={card}  key={"cd "+index}/>
@@ -61,7 +61,7 @@ return (
 </Swiper>
       </div>
       </div>
-    </>    
+    </div>    
   )
 }
 
