@@ -35,7 +35,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
 
       <div className='w-full bg-[#c2deff] sticky top-0 z-40 shadow-md'>
       <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center">
-        <div className="flex items-start  lg:items-center ">
+        <div className="flex items-start  lg:items-center">
           <Link to="/"><img src={ids18} alt="Logo" className='h-12'/></Link>
         </div>
         <div className="flex z-40 lg:hidden">
@@ -64,7 +64,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
         </div>
       
         <div className="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" /> 
+          <input type="radio" name="my-accordion-3"/> 
           <div className="collapse-title text-xl font-medium">
             SAP Offerings
           </div>
@@ -81,7 +81,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
         </div>
       
         <div className="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" /> 
+          <input type="radio" name="my-accordion-3"/> 
           <div className="collapse-title text-xl font-medium">
             Our Services
           </div>
@@ -172,9 +172,9 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
         </div>
         <ul className="hidden lg:flex">
             <li className='flex gap-4 items-center'>
-            <Link to='/'>Home</Link>
+            <Link to='/' className="font-semibold hover:text-blue-600">Home</Link>
               <div className="dropdown dropdown-hover z-40">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Company</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Company</label>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><Link to='/about'>About Us</Link></li>
                   <li><Link to='/contact'>Contact Us</Link></li>
@@ -183,7 +183,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">SAP Offerings</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">SAP Offerings</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to='/SapOfferings'>SAP Services</Link></li>
                   <li><Link to='/functionalServices'>Core Functional Services</Link></li>
@@ -196,7 +196,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Our Services</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Our Services</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                 <div className="dropdown dropdown-hover dropdown-right z-100">
                   <li><a className="cursor-pointer" onMouseOver={showDropdown1}>Digital Services</a></li>
@@ -253,7 +253,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600">Credentials</label>
+                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Credentials</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to="/industries">Industries Domain</Link></li>
                   <li><Link to="/consultant">Consultant Portfolio</Link></li>  
