@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, showDropdown4, showDropdown5, Show1, Show2, Show3, Show4, Show5}) => {
  
   
-    const contact = [<p><strong>Expertise</strong> in SAP & Digital Services</p>, '|', 'Contact@i-diligence.com', '|', 'Mon. - Fri.10:00 - 06:00'];
+    const contact = [<p><strong>Expertise</strong> in SAP & Digital Services</p>, '|', 'Mon. - Fri.10:00 - 06:00', '|'];
     
 
     useEffect(() => {
@@ -24,7 +24,8 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
     <>
       <div className="hidden lg:flex w-full bg-[#336298]">
             <div className="flex h-10 place-content-evenly items-center w-1/2 ml-24">
-                    {contact.map((item, index) => <p key={index} className='text-white text-xs'>{item}</p>)}
+                    {contact.map((item, index) => <a key={index} className='text-white text-xs'>{item}</a>)}
+                    <a href="mailto: Contact@i-diligence.com" className='text-white text-xs'>Contact@i-diligence.com</a>
             </div>
             
             <div className="flex w-1/2 place-content-end gap-4 items-center text-white mr-24">
