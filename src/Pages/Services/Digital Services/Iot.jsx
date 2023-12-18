@@ -32,7 +32,7 @@ const Iot = () => {
         {
             image: iot5,
             heading: 'IOT-Testing',
-            text: 'Striving for quality is the new normal in today`s world for better business outcome but unfortunately is lacked by many businesses. We at iDS satisfy our clients with exceptional quality, compatibility, manageability, accountable & Performances.'
+            text: 'Striving for quality is the new normal in today`s world for better business outcome but unfortunately is lacked by many businesses. We at iDS satisfy our clients with exceptional quality, compatibility & Performances.'
         },
         {
             image: iot6,

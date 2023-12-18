@@ -73,7 +73,7 @@ const EnquiryForm = () => {
 
         
               <form onSubmit={handleSubmit}>
-               <div className="grid grid-cols-2 gap-4">
+               <div className="grid grid-cols-2 gap-4 px-4">
                <div className="">
                <input type="name" autoComplete="off" name="firstName" id="firstName" value={values.firstName} onChange={handleChange} onBlur={handleBlur} placeholder="First Name *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs " />
                {errors.firstName && touched.firstName ? <span className="text-red-500 text-xs">{errors.firstName}</span> : null}
@@ -83,17 +83,17 @@ const EnquiryForm = () => {
                <div className="">
                
                <input type="name" autoComplete="off" name="lastName" id="lastName" value={values.lastName} onChange={handleChange} onBlur={handleBlur} placeholder="Last Name *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs " />
-               {errors.lastName && touched.lastName ? <span className="text-[#336298] font-bold text-sm">{errors.lastName}</span> : null}
+               {errors.lastName && touched.lastName ? <span className="text-red-500 text-xs">{errors.lastName}</span> : null}
                </div>
                
                <div>
                <input type="email" autoComplete="off" name="email" id="email" value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs" />
-               {errors.email && touched.email ? <p className="text-[#336298] font-bold text-sm">{errors.email}</p> : null} 
+               {errors.email && touched.email ? <span className="text-red-500 text-xs">{errors.email}</span> : null} 
                </div>
                
                <div className=""> 
                <input type="number" autoComplete="off" name="phoneNo" id="phoneNo" value={values.phoneNo} onChange={handleChange} onBlur={handleBlur} placeholder="Phone No *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs"/>
-               {errors.phoneNo && touched.phoneNo ? <p className="text-[#336298] font-bold text-sm">{errors.phoneNo}</p> : null}
+               {errors.phoneNo && touched.phoneNo ? <span className="text-red-500 text-xs">{errors.phoneNo}</span> : null}
                </div>
                </div>
                <div className='w-full mt-4 px-4'>
@@ -112,7 +112,7 @@ const EnquiryForm = () => {
                  <option>NA</option>
              </select>
             )}
-            {errors.service1 && touched.service1 ? <p className="text-[#336298] font-bold text-sm">{errors.service1}</p> : null}
+            {errors.service1 && touched.service1 ? <span className="text-red-500 text-xs">{errors.service1}</span> : null}
             {currentSection2 && (
               <select className="select input input-bordered border-[#336298] w-full lg:select-lg md:select-md sm:select-sm select-xs"name="service1" id="service1" value={values.service1} onChange={handleChange} onBlur={handleBlur}  required>
               <option disabled selected>Select Which SAP Service You Want *</option>
@@ -129,9 +129,9 @@ const EnquiryForm = () => {
               <option>NA</option>
           </select>
         )}
-        {errors.service && touched.service ? <p className="text-[#336298] font-bold text-sm">{errors.service}</p> : null}
+        {errors.service && touched.service ? <span className="text-[#336298] font-bold text-sm">{errors.service}</span> : null}
                <textarea className="textarea border-[#336298] md:textarea-md sm:textarea-sm textarea-xs w-full mt-4 h-[157px]" placeholder="Additional Information" autoComplete="off" name="message" id="message" value={values.message} onChange={handleChange} onBlur={handleBlur}></textarea>
-               {errors.message && touched.message ? <p className="text-[#336298] font-bold text-sm">{errors.message}</p> : null}
+               {errors.message && touched.message ? <span className="text-red-500 text-xs">{errors.message}</span> : null}
                <div className="w-full lg:px-20 px-4">
                <button type="submit" className=" btn bg-[#336298] text-white hover:opacity-0.100 hover:bg-black w-full mt-4">Send Message</button>
                </div>

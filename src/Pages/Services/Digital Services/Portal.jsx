@@ -74,7 +74,7 @@ const Portal = () => {
       image: website9,
       heading: 'B2C Portal for End Customers',
       text:'We provide the most responsive and functional IT design for companies and businesses worldwide.',
-      styles: 'w-60'
+      styles: 'w-[297px]'
     }
   ]
   const web = [
@@ -91,7 +91,7 @@ const Portal = () => {
     {
       image: website12,
       heading: 'CMS Website',
-      style: 'py-4'
+      style: 'py-0'
     },
     {
       image: website13,
@@ -106,7 +106,7 @@ const Portal = () => {
     {
       image: website15,
       heading: 'SEO',
-      style: 'py-4'
+      style: 'py-[14px]'
     }
   ]
   return (

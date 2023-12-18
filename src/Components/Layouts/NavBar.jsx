@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, showDropdown4, showDropdown5, Show1, Show2, Show3, Show4, Show5}) => {
  
   
-    const contact = ['9975547576', '|', 'Contact@i-diligence.com', '|', 'Mon. - Fri.10:00 - 06:00'];
+    const contact = [<p><strong>Expertise</strong> in SAP & Digital Services</p>, '|', 'Mon. - Fri.10:00 - 06:00', '|'];
     
 
     useEffect(() => {
@@ -22,9 +22,10 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
    
   return (
     <>
-      <div className="hidden lg:flex w-full bg-black ">
+      <div className="hidden lg:flex w-full bg-[#336298]">
             <div className="flex h-10 place-content-evenly items-center w-1/2 ml-24">
-                    {contact.map((item, index) => <p key={index} className='text-white text-xs'>{item}</p>)}
+                    {contact.map((item, index) => <a key={index} className='text-white text-xs'>{item}</a>)}
+                    <a href="mailto: Contact@i-diligence.com" className='text-white text-xs'>Contact@i-diligence.com</a>
             </div>
             
             <div className="flex w-1/2 place-content-end gap-4 items-center text-white mr-24">
@@ -33,8 +34,8 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
             </div>
       </div>
 
-      <div className='w-full bg-[#c2deff] sticky top-0 z-40 shadow-md'>
-      <nav className="container px-[10px] sm:px-[10px] flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center ">
+      <div className='w-full bg-white sticky top-0 z-40 shadow-md'>
+      <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center">
         <div className="flex items-start  lg:items-center">
           <Link to="/"><img src={ids18} alt="Logo" className='h-12'/></Link>
         </div>
@@ -172,9 +173,9 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
         </div>
         <ul className="hidden lg:flex">
             <li className='flex gap-4 items-center'>
-            <Link to='/' className="font-semibold hover:text-blue-600">Home</Link>
+            <Link to='/' className="font-semibold transition-all duration-200 hover:text-[#336298]">Home</Link>
               <div className="dropdown dropdown-hover z-40">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Company</label>
+                <label tabIndex={0} className="cursor-pointer transition-all duration-200 hover:text-[#336298] font-semibold">Company</label>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><Link to='/about'>About Us</Link></li>
                   <li><Link to='/contact'>Contact Us</Link></li>
@@ -183,7 +184,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">SAP Offerings</label>
+                <label tabIndex={0} className="cursor-pointer transition-all duration-200 hover:text-[#336298] font-semibold">SAP Offerings</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to='/SapOfferings'>SAP Services</Link></li>
                   <li><Link to='/functionalServices'>Core Functional Services</Link></li>
@@ -196,7 +197,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Our Services</label>
+                <label tabIndex={0} className="cursor-pointer transition-all duration-200 hover:text-[#336298] font-semibold">Our Services</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                 <div className="dropdown dropdown-hover dropdown-right z-100">
                   <li><a className="cursor-pointer" onMouseOver={showDropdown1}>Digital Services</a></li>
@@ -253,7 +254,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
                 </ul>
               </div>
               <div className="dropdown dropdown-hover z-100">
-                <label tabIndex={0} className="cursor-pointer hover:text-blue-600 font-semibold">Credentials</label>
+                <label tabIndex={0} className="cursor-pointer transition-all duration-200 hover:text-[#336298] font-semibold">Credentials</label>
                 <ul tabIndex={0} className="dropdown-content z-40 menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link to="/industries">Industries Domain</Link></li>
                   <li><Link to="/consultant">Consultant Portfolio</Link></li>  

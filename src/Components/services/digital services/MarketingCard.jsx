@@ -23,7 +23,7 @@ const MarketingCard = ({item}) => {
       delay:0,
       ease:[0, 0.71, 0.2, 1.01]
       }}
-       className=" text-white text-justify font-semibold text-xs">{item.text}</motion.p>
+       className=" text-white text-justify font-semibold text-xs py-12">{item.text}</motion.p>
     )}
   </div>
   </figure>
