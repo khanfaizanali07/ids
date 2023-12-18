@@ -13,7 +13,6 @@ const CredentialComponent = ({details}) => {
                 {details.content}
             </div>
      </div>
-
     </div>
   )
 }

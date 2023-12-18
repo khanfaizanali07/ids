@@ -22,7 +22,7 @@ const ServiceCard = ({item}) => {
       <motion.p
       initial={{y:444}}
       animate={{y:4}}
-      transition={{duration: 2, 
+      transition={{duration: 2,
       delay:0,
       ease:[0, 0.71, 0.2, 1.01]
       }}

@@ -52,17 +52,23 @@ const Contact = () => {
         <form onSubmit={handleSubmit}>
           <div className='w-full border-2 rounded-lg shadow-2xl pb-8 bg-white'>
           <h1 className='text-center text-4xl mt-4'>How May We Help You!</h1>
-          <div className="flex justify-evenly items-center mt-4 gap-6 px-4">
+          <div className="flex justify-center items-center mt-4 px-4">
+          <div className="grid grid-cols-2 gap-4 w-full">
+            <div>
           <input type="name" autoComplete="off" name="name" id="name" value={values.name} onChange={handleChange} onBlur={handleBlur} placeholder="Name *" className="input input-bordered border-[#336298] w-full"/>
-          {errors.name && touched.name ? <p className="text-[#336298] font-bold text-sm">{errors.name}</p> : null}  
+          {errors.name && touched.name ? <span className="text-red-500 text-xs">{errors.name}</span> : null}
+          </div>
+          <div>  
           <input type="email" autoComplete="off" name="email" id="email" value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email *" className="input input-bordered border-[#336298] w-full"/>
-          {errors.email && touched.email ? <p className="text-[#336298] font-bold text-sm">{errors.email}</p> : null}
+          {errors.email && touched.email ? <span className="text-red-500 text-xs">{errors.email}</span> : null}
+          </div>
+          </div>
           </div>
           <div className='w-full mt-4 px-4'>
           <input type="text" autoComplete="off" name="subject" id="subject" value={values.subject} onChange={handleChange} onBlur={handleBlur} placeholder="Subject *" className="input input-bordered border-[#336298] w-full"/>
-          {errors.subject && touched.subject ? <p className="text-[#336298] font-bold text-sm">{errors.subject}</p> : null}
+          {errors.subject && touched.subject ? <span className="text-red-500 text-xs">{errors.subject}</span> : null}
           <textarea className="textarea border-[#336298]   w-full mt-4 h-[157px]" placeholder="Please Describe What you Need" autoComplete="off" name="message" id="message" value={values.message} onChange={handleChange} onBlur={handleBlur}></textarea>
-          {errors.message && touched.message ? <p className="text-[#336298] font-bold text-sm">{errors.message}</p> : null}
+          {errors.message && touched.message ? <span className="text-red-500 text-xs">{errors.message}</span> : null}
           <div className="w-full lg:px-20 px-4">
           <button className="btn bg-[#336298] text-white hover:opacity-0.100 hover:bg-black w-full mt-4" type="submit">Send Message</button>
           </div>

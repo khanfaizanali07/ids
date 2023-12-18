@@ -3,7 +3,7 @@ import { Autoplay  } from "swiper/modules";
 import { EffectCreative } from 'swiper/modules'; 
 import { motion, AnimatePresence } from 'framer-motion';
 import 'swiper/swiper-bundle.css'; 
-import {  useState } from 'react';
+import { useState } from 'react';
 
 
 function Carousel() {
@@ -85,7 +85,6 @@ function Carousel() {
           </div>
         </SwiperSlide> 
 
-      
         <SwiperSlide>
           <div
             className={`${baseClasses} bg-center  bg-[url('./assets/images/home-bg-3.png')] bg-no-repeat`}
