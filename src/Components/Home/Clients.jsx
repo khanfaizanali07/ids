@@ -21,7 +21,7 @@ import logo16 from '../../assets/Images/Clients/maple-logo.jpg'
 import logo17 from '../../assets/Images/Clients/opensources-logo.jpg'
 import logo18 from '../../assets/Images/Clients/qaisar-logo.jpg'
 import logo19 from '../../assets/Images/Clients/rahnuma-logo.jpg'
-import logo20 from '../../assets/Images/Clients/sofa-factory-logo.jpg'
+import logo20 from '../../assets/Images/Clients/sofa-factory-logo.png'
 import logo21 from '../../assets/Images/Clients/ssk-logo.jpg'
 import logo22 from '../../assets/Images/Clients/tata-logo.jpg'
 import logo23 from '../../assets/Images/Clients/ullman-logo.jpg'
@@ -155,15 +155,82 @@ const Clients = () => {
   ]
   return (
     <>
-    
-    <div className="flex items-center justify-center ">
+    <div className='parent '>
+    <div className="1st-child flex items-center justify-center ">
+      <h1 className=" text-xl lg:text-3xl  text-slate-600"> Our Valuable Clients </h1>
+    </div>
+    <div className='2nd-child w-full '>
+      <div className='w-full '>
+      <Swiper
+        slidesPerView={2}
+        loop={true}
+        modules={[Autoplay, Pagination]}
+        dir = 'rtl'
+        spaceBetween={100}
+        autoplay={
+          {
+            delay: 2000,
+            disableOnInteraction: false
+          }
+        }
+        breakpoints={{
+          
+          640: {
+            slidesPerView: 3,
+            spaceBetween:20
+          },
+          1080: {
+            slidesPerView: 4
+          }
+        }
+        }
+        className="mySwiper container  px-[8px] sm:px-[10px] "
+      >
+        {clientImages1.map((images, index) =>
+          <SwiperSlide> <a href={images.href} key={"ef "+index} target={images.target}> <img className="w-[250px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
+        )}
+        
+      </Swiper>
+      <Swiper
+        slidesPerView={2}
+        loop={true}
+        modules={[Autoplay , Pagination]}
+        dir = 'ltr'
+        spaceBetween={100}
+        autoplay={
+          {
+            delay: 2000,
+            disableOnInteraction: false
+          }
+        }
+        breakpoints={{
+          
+          640: {
+            slidesPerView: 3,
+            spaceBetween:20
+          },
+          1024: {
+            slidesPerView: 4
+          }
+        }
+        }
+        className="mySwiper container  px-[8px] sm:px-[10px] "
+      >
+        {clientImages2.map((images, index) =>
+          <SwiperSlide> <a href={images.href2} key={"ef "+index} target={images.target2}> <img className="w-[250px] hover:scale-110 duration-300" src={images.image2} alt="Clients Logos"/></a></SwiperSlide>
+        )}
+        
+      </Swiper>
+      </div>
+    </div>
+    </div>
+    {/* <div className="flex items-center justify-center ">
       <h1 className=" text-xl lg:text-3xl  text-slate-500"> Our Valuable Clients </h1>
     </div>
-    <div className=" md:mt-5 lg:mt-6">
+    <div className=' w-full border-2 border-black'>
+    <div className="container  md:mt-5 lg:mt-6">
     <Swiper
         slidesPerView={2}
-        // spaceBetween={30}
-        // freeMode={true}
         loop={true}
         modules={[Autoplay, Pagination]}
         dir = 'rtl'
@@ -183,13 +250,14 @@ const Clients = () => {
           }
         }
         }
-        className="mySwiper w-full "
+        className="mySwiper container border-2 border-red-500 "
       >
         {clientImages1.map((images, index) =>
           <SwiperSlide> <a href={images.href} key={"ef "+index} target={images.target}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
         )}
         
       </Swiper>
+      
       <Swiper
         slidesPerView={2}
         // spaceBetween={30}
@@ -213,14 +281,15 @@ const Clients = () => {
           }
         }
         }
-        className="mySwiper w-full "
+        className="mySwiper "
       >
         {clientImages2.map((images, index) =>
           <SwiperSlide> <a href={images.href2} key={index} target={images.target2}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image2} alt="Clients Logos"/></a></SwiperSlide>
         )}
         
       </Swiper>
-    </div>
+      </div>
+    </div> */}
   </>
   )
 }

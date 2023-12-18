@@ -73,17 +73,28 @@ const EnquiryForm = () => {
 
         
               <form onSubmit={handleSubmit}>
-               <div className="flex justify-evenly mt-4 gap-6 px-4">
+               <div className="grid grid-cols-2 gap-4">
+               <div className="">
                <input type="name" autoComplete="off" name="firstName" id="firstName" value={values.firstName} onChange={handleChange} onBlur={handleBlur} placeholder="First Name *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs " />
-               {errors.firstName && touched.firstName ? <p className="text-[#336298] font-bold text-sm">{errors.firstName}</p> : null}
-               <input type="name" autoComplete="off" name="lastName" id="lastName" value={values.lastName} onChange={handleChange} onBlur={handleBlur} placeholder="Last Name *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs " />
-               {errors.lastName && touched.lastName ? <p className="text-[#336298] font-bold text-sm">{errors.lastName}</p> : null}
+               {errors.firstName && touched.firstName ? <span className="text-red-500 text-xs">{errors.firstName}</span> : null}
                </div>
-               <div className="flex justify-evenly mt-4 gap-6 px-4">
+               
+               
+               <div className="">
+               
+               <input type="name" autoComplete="off" name="lastName" id="lastName" value={values.lastName} onChange={handleChange} onBlur={handleBlur} placeholder="Last Name *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs " />
+               {errors.lastName && touched.lastName ? <span className="text-[#336298] font-bold text-sm">{errors.lastName}</span> : null}
+               </div>
+               
+               <div>
                <input type="email" autoComplete="off" name="email" id="email" value={values.email} onChange={handleChange} onBlur={handleBlur} placeholder="Email *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs" />
-               {errors.email && touched.email ? <p className="text-[#336298] font-bold text-sm">{errors.email}</p> : null}  
+               {errors.email && touched.email ? <p className="text-[#336298] font-bold text-sm">{errors.email}</p> : null} 
+               </div>
+               
+               <div className=""> 
                <input type="number" autoComplete="off" name="phoneNo" id="phoneNo" value={values.phoneNo} onChange={handleChange} onBlur={handleBlur} placeholder="Phone No *" className="input input-bordered border-[#336298] w-full md:input-md sm:input-sm input-xs"/>
                {errors.phoneNo && touched.phoneNo ? <p className="text-[#336298] font-bold text-sm">{errors.phoneNo}</p> : null}
+               </div>
                </div>
                <div className='w-full mt-4 px-4'>
             {currentSection1 && (

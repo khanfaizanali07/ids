@@ -19,7 +19,7 @@ const Credentials = () => {
 
   return (
     <div className='w-full bg-[#336298]'>
-      <div className='container px-[10px] sm:px-0 md:px-0 lg:px-[72px] py-12 lg:flex lg:justify-center'>
+      <div className='container px-[10px] lg:px-[72px] py-12 lg:flex lg:justify-center'>
         
         <div className='container flex flex-col justify-center lg:ps-[30px] gap-[15px] lg:h-full '>
         <h5 className='text-center  mt-[30px] text-xl sm:text-2xl lg:text-xl font-sans font-semibold text-slate-700 tracking-widest ' >

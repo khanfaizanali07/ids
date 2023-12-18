@@ -22,7 +22,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
    
   return (
     <>
-      <div className="hidden lg:flex w-full bg-black">
+      <div className="hidden lg:flex w-full bg-black ">
             <div className="flex h-10 place-content-evenly items-center w-1/2 ml-24">
                     {contact.map((item, index) => <p key={index} className='text-white text-xs'>{item}</p>)}
             </div>
@@ -34,7 +34,7 @@ const NavBar = ({ socialLinks, showDropdown1, showDropdown2, showDropdown3, show
       </div>
 
       <div className='w-full bg-[#c2deff] sticky top-0 z-40 shadow-md'>
-      <nav className="container px-[10px] sm:px-0 flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center ">
+      <nav className="container px-[10px] sm:px-[10px] flex justify-between lg:flex lg:justify-around  h-20 lg:px-[0px] items-center ">
         <div className="flex items-start  lg:items-center">
           <Link to="/"><img src={ids18} alt="Logo" className='h-12'/></Link>
         </div>
