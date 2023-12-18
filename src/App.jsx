@@ -38,32 +38,32 @@ function App() {
     {
       href: 'https://twitter.com/IdiligenceS',
       icon: <FaTwitter/>,
-      styles: 'hover:text-blue-500'
+      styles: 'transition-all duration-400 hover:text-blue-500'
     },
     {
       href: 'https://www.facebook.com/iDiligenceSolutions',
       icon: <FaFacebook/>,
-      styles: 'hover:text-blue-900'
+      styles: 'transition-all duration-400 hover:text-blue-900'
     },
     {
       href: 'https://www.linkedin.com/in/ids-solutions-pvt-ltd/',
       icon: <FaLinkedin/>,
-      styles: 'hover:text-blue-700'
+      styles: 'transition-all duration-400 hover:text-blue-700'
     },
     {
       href: 'https://www.reddit.com/user/idiligencesolutions/',
       icon: <FaReddit/>,
-      styles: 'hover:text-orange-600'
+      styles: 'transition-all duration-400 hover:text-orange-600'
     },
     {
       href: 'https://www.tumblr.com/idiligencesolutions',
       icon: <FaTumblr/>,
-      styles: 'hover:text-slate-600'
+      styles: 'transition-all duration-400 hover:text-slate-600'
     },
     {
       href: 'mailto: Contact@i-diligence.com',
       icon: <GrMail/>,
-      styles: 'hover:text-red-600'
+      styles: 'transition-all duration-400 hover:text-red-600'
     }
   ]
   const [Show1, setShow1] = useState(false);

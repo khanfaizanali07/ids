@@ -25,19 +25,19 @@ const Contact = () => {
       text: <>9975547576 <br/> 9860721526 <br/> 9890669234</>,
       icon: info1,
       heading: "Give us a call",
-      style: "p-4"
+      // style: "p-4"
     },
     {
       text: 'Contact@i-diligence.com',
       icon: info2,
       heading: "Drop us a line",
-      style: "p-7"
+      style: "p-14"
     },
     {
       text: 'Plot No. 13, Tuljai Nagar, Gadiya Vihar, Aurangabad - 431001, Maharashtra, INDIA',
       icon: info3,
       heading: "Visit our office",
-      style: "p-2"
+      // style: "p-2"
     }
   ]
   return (

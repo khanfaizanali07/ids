@@ -12,22 +12,26 @@ const Analytics = () => {
     {
       image: analytics1,
       heading: 'SAP Business Objects Dashboard & Analytics',
-      text: 'DS Analytics expert teams discover, define & deploy modern analytics solutions by adapting industry standards with business for informed solutions.iDS Data Analytics Service helps business to eliminate ambiguity.'
+      text: 'DS Analytics expert teams discover, define & deploy modern analytics solutions by adapting industry standards with business for informed solutions.iDS Data Analytics Service helps business to eliminate ambiguity.',
+      style: ''
     },
     {
       image: analytics2,
       heading: 'Microsoft Power BI Services',
-      text: 'Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.'
+      text: 'Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.',
+      style: ''
     },
     {
       image: analytics3,
       heading: 'The Tableu Reporting Services',
-      text: 'Tableau helps people see and understand data. Our visual analytics platform is transforming the way people use data to solve problems. See why organizations of all sizes trust Tableau to help them be more data-driven.'
+      text: 'Tableau helps people see and understand data. Our visual analytics platform is transforming the way people use data to solve problems. See why organizations of all sizes trust Tableau to help them be more data-driven.',
+      style: ''
     },
     {
       image: analytics4,
       heading: 'The QlikView Reporting Services',
-      text: 'Modern analytics started right here and that was just the beginning. Ride the next wave with Qlik Sense®.The modern analytics era truly began with the launch of QlikView.'
+      text: 'Modern analytics started right here and that was just the beginning. Ride the next wave with Qlik Sense®.The modern analytics era truly began with the launch of QlikView.',
+      style: 'py-[12px]'
     }
    ]
    const buisnessObj = [
@@ -44,7 +48,7 @@ const Analytics = () => {
     {
       image: analytics7,
       heading: 'Buisness Scorecards',
-      styles: 'py-8'
+      styles: 'py-10'
     }
    ]
   return (

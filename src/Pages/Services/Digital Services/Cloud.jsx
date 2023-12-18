@@ -20,13 +20,13 @@ const Cloud = () => {
             img1: cloud2,
             heading: 'Platform as a Service (PAAS)',
             text: 'This allow complete development and deployment environment in the cloud, with resources that enable you to deliver everything from simple cloud-based apps to sophisticated, cloud-enabled enterprise applications.',
-            style: 'pt-6'
+            style: 'pt-[26px]'
         },
         {
             img1: cloud3,
             heading: 'Infrastructre as a Service (IAAS)',
             text: 'Outsourced equipment to support operations including storage,hardware,servers and networking equipments. IaaS provider owns the equipments i.e. offers an infrastructure which is an Virtual machine with given amount of power.',
-            style: ''
+            // style: ''
         }
     ]
 
@@ -35,13 +35,13 @@ const Cloud = () => {
             img1: cloud4,
             heading: 'Hybrid Cloud',
             text: 'There is no hybrid solution by themselves it is how company decides. By joining dedicated and cloud, businesses can establish IT landscape that Provide best balance of convenience and security.',
-            style: ''
+            style: 'pt-[1px]'
         },
         {
             img1: cloud5,
             heading: 'Managed Cloud',
             text: 'Resource dedicated to one customer and mange be provider and Accessed by VPN. Managed is built on top of Private cloud with dedicated hardware owned By cloud provider.',
-            style: ''
+            style: 'pt-[1px]'
         },
         {
             img1: cloud6,
