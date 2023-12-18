@@ -160,7 +160,7 @@ const Clients = () => {
       <h1 className=" text-xl lg:text-3xl  text-slate-600"> Our Valuable Clients </h1>
     </div>
     <div className='2nd-child w-full '>
-      <div className='w-full '>
+      <div className='w-full lg:px-[100px] '>
       <Swiper
         slidesPerView={2}
         loop={true}
@@ -187,7 +187,7 @@ const Clients = () => {
         className="mySwiper container  px-[8px] sm:px-[10px] "
       >
         {clientImages1.map((images, index) =>
-          <SwiperSlide> <a href={images.href} key={"ef "+index} target={images.target}> <img className="w-[250px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
+          <SwiperSlide> <a href={images.href} key={"ef "+index} target={images.target}> <img className="w-[250px] hover:scale-110 duration-300 " src={images.image} alt="Clients Logos"/></a></SwiperSlide>
         )}
         
       </Swiper>
@@ -214,7 +214,7 @@ const Clients = () => {
           }
         }
         }
-        className="mySwiper container  px-[8px] sm:px-[10px] "
+        className="mySwiper container  px-[8px] sm:px-[10px]"
       >
         {clientImages2.map((images, index) =>
           <SwiperSlide> <a href={images.href2} key={"ef "+index} target={images.target2}> <img className="w-[250px] hover:scale-110 duration-300" src={images.image2} alt="Clients Logos"/></a></SwiperSlide>
@@ -224,73 +224,7 @@ const Clients = () => {
       </div>
     </div>
     </div>
-    {/* <div className="flex items-center justify-center ">
-      <h1 className=" text-xl lg:text-3xl  text-slate-500"> Our Valuable Clients </h1>
-    </div>
-    <div className=' w-full border-2 border-black'>
-    <div className="container  md:mt-5 lg:mt-6">
-    <Swiper
-        slidesPerView={2}
-        loop={true}
-        modules={[Autoplay, Pagination]}
-        dir = 'rtl'
-        autoplay={
-          {
-            delay: 2000,
-            disableOnInteraction: false
-          }
-        }
-        breakpoints={{
-          
-          640: {
-            slidesPerView: 3
-          },
-          1080: {
-            slidesPerView: 5
-          }
-        }
-        }
-        className="mySwiper container border-2 border-red-500 "
-      >
-        {clientImages1.map((images, index) =>
-          <SwiperSlide> <a href={images.href} key={"ef "+index} target={images.target}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image} alt="Clients Logos"/></a></SwiperSlide>
-        )}
-        
-      </Swiper>
-      
-      <Swiper
-        slidesPerView={2}
-        // spaceBetween={30}
-        // freeMode={true}
-        loop={true}
-        modules={[Autoplay, Pagination]}
-        dir = 'ltr'
-        autoplay={
-          {
-            delay: 2000,
-            disableOnInteraction: false
-          }
-        }
-        breakpoints={{
-          
-          640: {
-            slidesPerView: 3
-          },
-          1080: {
-            slidesPerView: 5
-          }
-        }
-        }
-        className="mySwiper "
-      >
-        {clientImages2.map((images, index) =>
-          <SwiperSlide> <a href={images.href2} key={index} target={images.target2}> <img className="w-[200px] hover:scale-110 duration-300" src={images.image2} alt="Clients Logos"/></a></SwiperSlide>
-        )}
-        
-      </Swiper>
-      </div>
-    </div> */}
-  </>
+    </>
   )
 }
 
